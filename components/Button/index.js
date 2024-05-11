@@ -7,5 +7,5 @@ export default props => {
     props.triple && stylesButton.push(styles.buttonTriple)
     props.operation && stylesButton.push(styles.operationButton)
 
-    return <TouchableHighlight onPress={ () => props.onPress(props.text) }><Text style={stylesButton}>{ props.text }</Text></TouchableHighlight>
+    return <TouchableHighlight onPress={ props.onPress }><Text style={stylesButton}>{ props.text }</Text></TouchableHighlight>
 }
